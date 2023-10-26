@@ -208,6 +208,7 @@ if (!class_exists('Algolia_Send_Products')) {
                  * Build the record array using the information from the WooCommerce product
                  */
                 $record['objectID']                      = $product->get_id();
+		$record['slug']                          = $product->get_slug();
                 $record['product_name']                  = $product->get_name();
                 $record['product_image']                 = $product_image;
                 $record['short_description']             = $product->get_short_description();
